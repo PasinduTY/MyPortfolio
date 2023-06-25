@@ -1,0 +1,36 @@
+{
+    "projects" : [
+        {
+            "image" : "images/projects/e2metrics.png",
+            "title": "E2Metrics",
+            "bodyText": "Designed a web application to analyze the performance of GitHub Repositories. Analyzed Git repositories to track progress,calculate key metrics and visualize data using a dynamicdashboard.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/orgs/TeknoUOM/repositories"
+                }
+            ],
+            "tags" : [
+                "React",
+                "Asgardeo",
+                "JavaScript",
+                "Ballerina",
+                "Bulma",
+                "MySQL",
+                "AWS",
+                "Choreo",
+                "Github API"
+            ]
+        },
+        {
+            "image" : "images/projects/boxing.jpg",
+            "title": "Automatic Boxing Training Machine",
+            "bodyText": "Designed a system that allows individuals to engage in boxing practice independently, without the assistance of a trainer or a sparring partner. The Atmega32 microcontroller, along with other sensors, was used as hardware components in the system.The technologies employed for the implementation included Atmel Studio, Proteus, and Blender.",
+            "tags" : [
+                "C language",
+                "Atmel Studio",
+                "Proteus"
+            ]
+        }
+    ]
+}

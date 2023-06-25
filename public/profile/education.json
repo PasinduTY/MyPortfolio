@@ -1,0 +1,22 @@
+{
+    "education":[
+        {
+            "title": "2021 - Present",
+            "cardTitle": "B.Sc.(Hons) in Information Technology",
+            "cardSubtitle":"University of Moratuwa",
+            "cardDetailedText": "CGPA - 3.42",
+            "icon" : {
+                "src": "images/education/moratuwa.png"
+            }
+        },
+        {
+            "title": "2004-2018",
+            "cardTitle": "G.C.E Advanced Level",
+            "cardSubtitle":"Richmond College - Galle",
+            "cardDetailedText": "A 2B's | Z-score: 1.47",
+            "icon" : {
+                "src": "images/education/richmond.jpg"
+            }
+        }
+    ]
+}

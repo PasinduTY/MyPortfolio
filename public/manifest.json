@@ -1,0 +1,15 @@
+{
+  "short_name": "Pasindu Siriwardena",
+  "name": "Pasindu Siriwardena - Portfolio",
+  "icons": [
+    {
+      "src": "images/favicon.ico",
+      "type": "ico",
+      "sizes": "425x225"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

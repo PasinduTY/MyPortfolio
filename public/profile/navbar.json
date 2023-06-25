@@ -1,0 +1,35 @@
+{
+    "logo" : {
+        "source": "images/apple-touch-icon.png",
+        "height" : 45,
+        "width" : 50
+    },
+    "sections": [
+        {
+            "title": "Home",
+            "href": "/"
+        },
+        {
+            "title": "About",
+            "href": "/about"
+        },
+        {
+            "title": "Skills",
+            "href": "/skills"
+        },
+        {
+            "title": "Education",
+            "href": "/education"
+        },
+        {
+            "title": "Projects",
+            "href": "/projects"
+        },
+        {
+            "title": "Resume",
+            "href": "https://drive.google.com/file/d/1P0o5iRNJMd-lcBRXuWJF6LiIqPQDfHDZ/view",
+            "type": "link"
+        }
+    ]
+
+}
