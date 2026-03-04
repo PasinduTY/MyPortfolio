@@ -1,36 +1,118 @@
 {
-    "projects" : [
+  "projects": [
+    {
+      "image": "images/projects/doctranslator.png",
+      "title": "Document Translator",
+      "bodyText": "Developed a document translation tool using the Azure AI Translator API to translate files into multiple languages while preserving original formatting. Identified limitations of the built in translation tool for JSON documents and implemented custom logic to support structured JSON translation.",
+      "links": [
         {
-            "image" : "images/projects/e2metrics.png",
-            "title": "E2Metrics",
-            "bodyText": "Designed a web application to analyze the performance of GitHub Repositories. Analyzed Git repositories to track progress,calculate key metrics and visualize data using a dynamicdashboard.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/orgs/TeknoUOM/repositories"
-                }
-            ],
-            "tags" : [
-                "React",
-                "Asgardeo",
-                "JavaScript",
-                "Ballerina",
-                "Bulma",
-                "MySQL",
-                "AWS",
-                "Choreo",
-                "Github API"
-            ]
-        },
-        {
-            "image" : "images/projects/boxing.jpg",
-            "title": "Automatic Boxing Training Machine",
-            "bodyText": "Designed a system that allows individuals to engage in boxing practice independently, without the assistance of a trainer or a sparring partner. The Atmega32 microcontroller, along with other sensors, was used as hardware components in the system.The technologies employed for the implementation included Atmel Studio, Proteus, and Blender.",
-            "tags" : [
-                "C language",
-                "Atmel Studio",
-                "Proteus"
-            ]
+          "text": "GitHub",
+          "href": "https://github.com/PasinduTY/document-translator"
         }
-    ]
+      ],
+      "tags": [
+        "ASP.NET Core",
+        "Blazor framework",
+        "Radzen components",
+        "Azure AI Translator API"
+      ]
+    },
+    {
+      "image": "images/projects/e2metrics.png",
+      "title": "E2Metrics",
+      "bodyText": "Designed a web application to analyze the performance of GitHub Repositories. Analyzed Git repositories to track progress,calculate key metrics and visualize data using a dynamic dashboard.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/orgs/TeknoUOM/repositories"
+        }
+      ],
+      "tags": [
+        "React",
+        "Asgardeo",
+        "JavaScript",
+        "Ballerina",
+        "Bulma",
+        "MySQL",
+        "AWS",
+        "Choreo",
+        "Github API"
+      ]
+    },
+    {
+      "image": "images/projects/boxing.jpg",
+      "title": "Automatic Boxing Training Machine",
+      "bodyText": "Designed a system that allows individuals to engage in boxing practice independently, without the assistance of a trainer or a sparring partner. The Atmega32 microcontroller, along with other sensors, was used as hardware components in the system.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/PasinduTY/Automatic-Boxing-Trainer"
+        }
+      ],
+      "tags": ["C language", "Atmel Studio", "Proteus"]
+    },
+
+    {
+      "image": "images/projects/research.png",
+      "title": "Multimodal Data Integration for Stock Investment Decision Making",
+      "bodyText": "Developed a recommendation system that integrates social media sentiment, news, historical stock data, and financial indicators to guide investors in making informed decisions on S&P SL20 stocks in the Colombo Stock Exchange (CSE).Built predictive models to forecast stock prices, returns, and risk, supporting data-driven investment decisions.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/your-username/weather-forecasting-app"
+        }
+      ],
+      "tags": ["Python", "Machine Learning"]
+    },
+
+    {
+      "image": "images/projects/purchaseorders.png",
+      "title": "Purchase Order Management System ",
+      "bodyText": "Developed a full-stack Purchase Order Management system with complete CRUD functionality.Implemented RESTful APIs using Entity Framework Core (Code First), including filtering, sorting, and pagination.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/PasinduTY/purchase-order-management"
+        }
+      ],
+      "tags": [
+        "ASP.NET Core",
+        "Entity Framework Core (Code First)",
+        "Angular",
+        "TypeScript",
+        "SQL Server"
+      ]
+    },
+
+    {
+      "image": "images/projects/test.png",
+      "title": "Serenity-BDD Test Suite for UI & API",
+      "bodyText": "Built automated UI and API test suites using Serenity BDD with Selenium, Rest Assured, and Cucumber, integrated with GitHub Actions for CI/CD and comprehensive test reporting., and severe weather alerts.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/sachini786/Group_52-Serenity-"
+        }
+      ],
+      "tags": [
+        "Serenity-BDD",
+        "Selenium",
+        "Cucumber",
+        "RestAssured",
+        "GitHub Actions"
+      ]
+    }
+  ],
+  "uiux": [
+    {
+      "image": "images/uiux/design1.png",
+      "title": "UI Design 1",
+      "figmaLink": "https://www.figma.com/design/your-design-id"
+    },
+    {
+      "image": "images/uiux/design2.png",
+      "title": "UI Design 2",
+      "figmaLink": "https://www.figma.com/design/your-design-id"
+    }
+  ]
 }

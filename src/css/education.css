@@ -1,19 +1,32 @@
 .vertical {
-    justify-content: center;
+  justify-content: center;
 }
 
 .vertical_alternating {
-    justify-content: center;
+  justify-content: center;
+}
+
+.timeline-item-title,
+span[class*="timeline-item-title"],
+div[class*="timeline-circle-wrapper"] + div,
+.chrono-title {
+  color: rgb(6, 121, 244) !important;
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
 }
 
 @media only screen and (max-width: 578px) {
-    div.vertical-item-row > div:nth-child(1) {
-        width: 20% !important;
-    }
-    div.vertical-item-row > div:nth-child(2) {
-        width: 65% !important;
-    }
-    div.vertical-item-row > div:nth-child(3) {
-        width: 15% !important;
-    }
+  div.vertical-item-row > div:nth-child(1) {
+    width: 20% !important;
+  }
+  div.vertical-item-row > div:nth-child(2) {
+    width: 65% !important;
+  }
+  div.vertical-item-row > div:nth-child(3) {
+    width: 15% !important;
+  }
 }
