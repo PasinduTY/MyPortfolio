@@ -59,7 +59,7 @@
       "links": [
         {
           "text": "GitHub",
-          "href": "https://github.com/your-username/weather-forecasting-app"
+          "href": ""
         }
       ],
       "tags": ["Python", "Machine Learning"]
@@ -106,13 +106,33 @@
   "uiux": [
     {
       "image": "images/uiux/design1.png",
-      "title": "UI Design 1",
-      "figmaLink": "https://www.figma.com/design/your-design-id"
+      "title": "Ceylon Raga Reserve Tea",
+      "figmaLink": "https://www.figma.com/design/7EUQd0oiKDOdncm3KCsFYf/Untitled?node-id=0-1&t=4kiOoOaRfQF33vVs-1"
     },
     {
       "image": "images/uiux/design2.png",
-      "title": "UI Design 2",
-      "figmaLink": "https://www.figma.com/design/your-design-id"
+      "title": "Triathlon Hackathon by Rootcode",
+      "figmaLink": "https://www.figma.com/design/U9ctIr2jFVWhpKj7i3LDBg/Triathlon?node-id=0-1&t=R6fb96n6OHWEiDnH-1"
+    },
+    {
+      "image": "images/uiux/design3.png",
+      "title": "E2Metrics",
+      "figmaLink": "https://www.figma.com/design/HObggKVg9iez9PwYlWyjwG/UI?node-id=0-1&t=GZbQVKTkXzuzBSPf-1"
+    },
+    {
+      "image": "images/uiux/design4.png",
+      "title": "Mora UXplore Design Competition",
+      "figmaLink": "https://www.figma.com/design/sdO6kzFnptlayzU8H2Hwm9/MajesticHands3.0?node-id=0-1&t=YcUeQYXWajH2RNmh-1"
+    },
+    {
+      "image": "images/uiux/design5.png",
+      "title": "Management & Information System Assignment",
+      "figmaLink": "https://www.figma.com/design/hfm7msSlHhoWbBKeRbkyrs/MIS?node-id=0-1&t=6TQO9O05lS5G7hcW-1"
+    },
+    {
+      "image": "images/uiux/design6.png",
+      "title": "Bus Ticket Booking",
+      "figmaLink": "https://www.figma.com/design/x9QA0fVpYlVGY5l950m57P/Bus?node-id=0-1&t=beTaDHbeJ6KLEn6f-1"
     }
   ]
 }

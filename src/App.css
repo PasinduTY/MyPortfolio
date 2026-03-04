@@ -1,4 +1,3 @@
-
 .App {
   text-align: center;
   align-items: center;
@@ -9,7 +8,7 @@
 }
 
 .navbar-custom {
-  font-size:large;
+  font-size: large;
 }
 
 .navbar__link {
@@ -18,13 +17,13 @@
   font-size: 1em;
   cursor: pointer;
   text-decoration: none;
-  letter-spacing: .1em;
-  text-indent: .3em;
+  letter-spacing: 0.1em;
+  text-indent: 0.3em;
   border-bottom: 3px solid transparent;
 }
 
 .navbar__link::after {
-  transition: all ease-in-out .2s;
+  transition: all ease-in-out 0.2s;
   background: none repeat scroll 0 0;
   content: "";
   display: block;
@@ -33,13 +32,13 @@
   width: 0;
 }
 
- .navbar__link:hover::after {
+.navbar__link:hover::after {
   visibility: visible;
   width: 40%;
 }
 
 .navbar__link--active::after {
-  transition: all ease-in-out .2s;
+  transition: all ease-in-out 0.2s;
   width: 100%;
 }
 
@@ -105,21 +104,18 @@ section.timeline-card-content div.card-description > p {
   margin-top: 60px;
 }
 
-
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-
   .navbar__link {
     margin-left: 0.4em;
     margin-right: 0.4em;
     font-size: 0.9em;
     cursor: pointer;
-    letter-spacing: .1em;
-    text-indent: .2em;
+    letter-spacing: 0.1em;
+    text-indent: 0.2em;
   }
 }
 
 @media (max-width: 768px) {
-
   .navbar__link::after {
     background: none;
     content: "";
@@ -132,7 +128,7 @@ section.timeline-card-content div.card-description > p {
   .navbar__link--active::after {
     width: 0;
   }
-  
+
   .navbar__link--active:hover::after {
     width: 0;
   }
@@ -147,4 +143,3 @@ section.timeline-card-content div.card-description > p {
   font-weight: bold;
   margin-bottom: 25px;
 }
-
