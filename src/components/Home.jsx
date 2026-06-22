@@ -342,7 +342,7 @@ function Home() {
             <span>{firstName}</span> {lastName}
           </Headline>
           <IntroText>
-            I build products end to end — from React interfaces to the APIs and
+            I build products end to end — from interfaces to the APIs and
             databases behind them — and design the screens in between.
           </IntroText>
           <CtaRow>

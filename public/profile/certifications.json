@@ -1,0 +1,22 @@
+{
+  "certifications": [
+    {
+      "title": "Microsoft Certified: Azure Fundamentals",
+      "issuer": "Microsoft",
+      "logo": "images/certifications/microsoft.png",
+      "credentialLink": "https://learn.microsoft.com/api/credentials/share/en-us/PasinduSiriwardena-3936/A27B1D51E48A8721?sharingId=7F1C9C4862EA2C9F"
+    },
+    {
+      "title": "DevOps Foundations: Continuous Delivery/Continuous Integration",
+      "issuer": "LinkedIn Learning",
+      "logo": "images/certifications/linkedin.png",
+      "credentialLink": "https://www.linkedin.com/learning/certificates/4e8b613e243669ec0f2a6d5c11db489af54f45e11fb4ffd882b6de53b130c6cb?trk=share_certificate"
+    },
+    {
+      "title": "Docker Foundations Professional Certificate",
+      "issuer": "Docker",
+      "logo": "images/certifications/docker.jpeg",
+      "credentialLink": "https://www.linkedin.com/learning/certificates/579e68a8b0eb6ea07c17f0d822f3c28b6ae9a6e495b31d22a59e716e646e9ba9"
+    }
+  ]
+}
