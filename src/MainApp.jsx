@@ -19,7 +19,7 @@ function MainApp() {
           <About />
         </section>
         <section id="skills">
-          <Skills header="Skills" />
+          <Skills />
         </section>
         <section id="education">
           <Education header="Education" />

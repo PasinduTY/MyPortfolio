@@ -106,6 +106,12 @@
         {
           "icon": "images/skills/azuredevops.png",
           "title": "Azure DevOps"
+        },
+        { "icon": "images/skills/docker.png", "title": "Docker" },
+        { "icon": "images/skills/cicd.png", "title": "CI/CD" },
+        {
+          "icon": "images/skills/githubactions.png",
+          "title": "GitHub Actions"
         }
       ]
     }
