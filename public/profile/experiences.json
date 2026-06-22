@@ -1,33 +1,31 @@
 {
-    "experiences": [
-        {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Full-time",
-            "workDescription": [
-                "Integrated **2** new product.",
-                "Worked on adding **def** to **bcd**. Improved speed by 50%."
-            ],
-            "dateText": "06/20XX – Present"
-        },
-        {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Internship",
-            "workDescription": [
-                "Worked on abc."
-            ],
-            "dateText": "01/20XX – 05/20XX"
-        },
-        {
-            "title": "App Developer",
-            "subtitle": "ABC Pvt Ltd",
-            "workType": "Freelance",
-            "workDescription": [
-                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
-                "Done bcd work."
-            ],
-            "dateText": "09/20XX – 01/20YY"
-        }
-    ]
+  "experiences": [
+    {
+      "title": "Software Engineering Intern",
+      "subtitle": "XYZ Ltd",
+      "workType": "Full-time",
+      "workDescription": [
+        "Integrated **2** new product.",
+        "Worked on adding **def** to **bcd**. Improved speed by 50%."
+      ],
+      "dateText": "06/20XX – Present",
+      "logo": "images/experiences/xyz.png"
+    },
+    {
+      "title": "Software Engineering Intern",
+      "subtitle": "Creative Software",
+      "workType": "Internship",
+      "workDescription": [
+        "Gained hands-on software development experience through real world projects with .NET, Blazor, Azure, and Agile practices.",
+        "Built a data migration tool to support cloud data modernization by migrating real database records from SQL databases to Azure Cosmos DB, ensuring data integrity and consistency.",
+        "Developed language import and deletion functionality using Azure Translation APIs for Accure Business Cloud (an enterprise business management platform), enabling users worldwide to dynamically add new languages and automatically translate application content and documents, improving accessibility and user experience.",
+        "Designed and implemented a tree-structured visualization for complex parent-child data. ",
+        "R&D on AI translation APIs, bulk operations and Cosmos DB optimizations. ",
+        "Enhanced search and filtering features. ",
+        "Fixed critical issues and bugs."
+      ],
+      "dateText": "01/20XX – 05/20XX",
+      "logo": "images/experiences/xyz.png"
+    }
+  ]
 }
