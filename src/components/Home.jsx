@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
 import styled, { keyframes, ThemeContext } from "styled-components";
 import endpoints from "../constants/endpoints";
@@ -16,7 +15,7 @@ const blink = keyframes`
 `;
 
 const Wrap = styled.div`
-  max-width: 1600px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 40px;
 
@@ -120,7 +119,7 @@ const CtaRow = styled.div`
   }
 `;
 
-const BtnPrimary = styled(Link)`
+const BtnPrimary = styled.a`
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -131,7 +130,7 @@ const BtnPrimary = styled(Link)`
   text-decoration: none;
 `;
 
-const BtnSecondary = styled(Link)`
+const BtnSecondary = styled.a`
   font-family: "Manrope", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -347,8 +346,8 @@ function Home() {
             databases behind them — and design the screens in between.
           </IntroText>
           <CtaRow>
-            <BtnPrimary to="/projects">View my work →</BtnPrimary>
-            <BtnSecondary to="/about">About me</BtnSecondary>
+            <BtnPrimary href="#projects">View my work →</BtnPrimary>
+            <BtnSecondary href="#about">About me</BtnSecondary>
           </CtaRow>
           <MetaRow>
             <SocialsLabel>Find me online</SocialsLabel>

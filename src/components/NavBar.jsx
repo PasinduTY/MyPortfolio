@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { withRouter } from "react-router";
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import endpoints from "../constants/endpoints";
 import ThemeToggler from "./ThemeToggler";
 
+const HeaderWrap = styled.header`
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: ${(props) => props.theme.background};
+`;
+
 const Bar = styled.div`
-  max-width: 1380px;
+  max-width: 1450px;
   margin: 0 auto;
   padding: 0 40px;
 
@@ -23,7 +28,7 @@ const NavRow = styled.nav`
   border-bottom: 1px solid ${(props) => props.theme.border};
 `;
 
-const Logo = styled(NavLink)`
+const Logo = styled.a`
   font-family: "Outfit", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -41,21 +46,18 @@ const Links = styled.div`
   }
 `;
 
-const StyledLink = styled(NavLink)`
+const StyledLink = styled.a`
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: ${(props) => props.theme.textSecondary};
+  color: ${(props) =>
+    props.$active ? props.theme.accentColor : props.theme.textSecondary};
   text-decoration: none;
 
-  &.navbar__link--active {
-    color: ${(props) => props.theme.accentColor};
-  }
-
   @media (min-width: 1500px) {
-    font-size: 15px;
+    font-size: 16px;
   }
 `;
 
@@ -113,6 +115,7 @@ const MobileMenu = styled.div`
 const NavBar = () => {
   const [data, setData] = useState(null);
   const [expanded, setExpanded] = useState(false);
+  const [activeId, setActiveId] = useState("home");
 
   useEffect(() => {
     fetch(endpoints.navbar, {
@@ -123,80 +126,105 @@ const NavBar = () => {
       .catch((err) => err);
   }, []);
 
+  const internalLinks =
+    data?.sections?.filter((section) => section.type !== "link") ?? [];
+  const externalLinks =
+    data?.sections?.filter((section) => section.type === "link") ?? [];
+
+  useEffect(() => {
+    if (internalLinks.length === 0) return undefined;
+
+    const elements = internalLinks
+      .map((section) => document.querySelector(section.href))
+      .filter(Boolean);
+
+    if (elements.length === 0) return undefined;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveId(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: "-35% 0px -55% 0px", threshold: 0 },
+    );
+
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+    // eslint-disable-next-line
+  }, [data]);
+
   if (!data) return null;
 
-  const internalLinks =
-    data.sections?.filter((section) => section.type !== "link") ?? [];
-  const externalLinks =
-    data.sections?.filter((section) => section.type === "link") ?? [];
-
   return (
-    <Bar>
-      <NavRow>
-        <Logo to="/" exact onClick={() => setExpanded(false)}>
-          pasinduTY
-        </Logo>
+    <HeaderWrap>
+      <Bar>
+        <NavRow>
+          <Logo href="#home" onClick={() => setExpanded(false)}>
+            pasinduTY
+          </Logo>
 
-        <Links>
+          <Links>
+            {internalLinks.map((section) => (
+              <StyledLink
+                key={section.title}
+                href={section.href}
+                $active={section.href === `#${activeId}`}
+              >
+                {section.title}
+              </StyledLink>
+            ))}
+          </Links>
+
+          <RightSide>
+            {externalLinks.map((section) => (
+              <CtaLink
+                key={section.title}
+                href={section.href}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {section.title}
+              </CtaLink>
+            ))}
+            <ThemeToggler />
+            <Burger
+              onClick={() => setExpanded(!expanded)}
+              aria-label="Toggle menu"
+            >
+              {expanded ? "✕" : "☰"}
+            </Burger>
+          </RightSide>
+        </NavRow>
+
+        <MobileMenu open={expanded}>
           {internalLinks.map((section) => (
-            <StyledLink
+            <a
               key={section.title}
-              to={section.href}
-              exact={section.href === "/"}
-              activeClassName="navbar__link--active"
+              href={section.href}
+              onClick={() => setExpanded(false)}
             >
               {section.title}
-            </StyledLink>
+            </a>
           ))}
-        </Links>
-
-        <RightSide>
           {externalLinks.map((section) => (
-            <CtaLink
+            <a
               key={section.title}
               href={section.href}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => setExpanded(false)}
             >
               {section.title}
-            </CtaLink>
+            </a>
           ))}
-          <ThemeToggler />
-          <Burger
-            onClick={() => setExpanded(!expanded)}
-            aria-label="Toggle menu"
-          >
-            {expanded ? "✕" : "☰"}
-          </Burger>
-        </RightSide>
-      </NavRow>
-
-      <MobileMenu open={expanded}>
-        {internalLinks.map((section) => (
-          <NavLink
-            key={section.title}
-            to={section.href}
-            exact={section.href === "/"}
-            onClick={() => setExpanded(false)}
-          >
-            {section.title}
-          </NavLink>
-        ))}
-        {externalLinks.map((section) => (
-          <a
-            key={section.title}
-            href={section.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setExpanded(false)}
-          >
-            {section.title}
-          </a>
-        ))}
-      </MobileMenu>
-    </Bar>
+        </MobileMenu>
+      </Bar>
+    </HeaderWrap>
   );
 };
 
-const NavBarWithRouter = withRouter(NavBar);
-export default NavBarWithRouter;
+export default NavBar;
