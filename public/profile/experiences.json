@@ -2,17 +2,6 @@
   "experiences": [
     {
       "title": "Software Engineering Intern",
-      "subtitle": "XYZ Ltd",
-      "workType": "Full-time",
-      "workDescription": [
-        "Integrated **2** new product.",
-        "Worked on adding **def** to **bcd**. Improved speed by 50%."
-      ],
-      "dateText": "06/20XX – Present",
-      "logo": "images/experiences/xyz.png"
-    },
-    {
-      "title": "Software Engineering Intern",
       "subtitle": "Creative Software",
       "workType": "Internship",
       "workDescription": [
@@ -24,8 +13,8 @@
         "Enhanced search and filtering features. ",
         "Fixed critical issues and bugs."
       ],
-      "dateText": "01/20XX – 05/20XX",
-      "logo": "images/experiences/xyz.png"
+      "dateText": "02/2024 – 08/2024",
+      "logo": "images/experiences/creativesoftware.png"
     }
   ]
 }

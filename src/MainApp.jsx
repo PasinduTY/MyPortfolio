@@ -25,7 +25,7 @@ function MainApp() {
           <Education />
         </section>
         <section id="experience">
-          <Experience header="Experience" />
+          <Experience />
         </section>
         <section id="projects">
           <Projects header="Projects" />
