@@ -25,10 +25,46 @@ const Section = styled.section`
   }
 
   @media (max-width: 760px) {
-    flex-direction: column-reverse;
+    display: grid;
+    grid-template-areas:
+      "eyebrow"
+      "heading"
+      "photo"
+      "text";
+    grid-template-columns: 1fr;
     padding: 32px 24px 56px;
+    gap: 0;
     text-align: center;
-    gap: 40px;
+  }
+`;
+
+const MobileEyebrow = styled.div`
+  display: none;
+
+  @media (max-width: 760px) {
+    display: block;
+    grid-area: eyebrow;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    color: ${(props) => props.theme.accentColor};
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+`;
+
+const MobileHeading = styled.h1`
+  display: none;
+
+  @media (max-width: 760px) {
+    display: block;
+    grid-area: heading;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+    font-size: clamp(28px, 7vw, 38px);
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: ${(props) => props.theme.color};
   }
 `;
 
@@ -46,7 +82,9 @@ const PhotoSide = styled.div`
   }
 
   @media (max-width: 760px) {
+    grid-area: photo;
     width: 200px;
+    margin: 0 auto 28px;
   }
 `;
 
@@ -65,7 +103,7 @@ const Blob = styled.div`
 const PhotoFrame = styled.div`
   position: relative;
   z-index: 1;
-  width: 90%;
+  width: 75%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;
@@ -83,6 +121,10 @@ const Photo = styled.img`
 const TextSide = styled.div`
   flex: 1;
   min-width: 0;
+
+  @media (max-width: 760px) {
+    grid-area: text;
+  }
 `;
 
 const Eyebrow = styled.div`
@@ -97,6 +139,10 @@ const Eyebrow = styled.div`
     font-size: 14px;
     margin-bottom: 24px;
   }
+
+  @media (max-width: 760px) {
+    display: none;
+  }
 `;
 
 const Heading = styled.h1`
@@ -109,6 +155,10 @@ const Heading = styled.h1`
 
   @media (min-width: 1500px) {
     font-size: 56px;
+  }
+
+  @media (max-width: 760px) {
+    display: none;
   }
 `;
 
@@ -146,7 +196,7 @@ const FactsGrid = styled.div`
 
 const FactLabel = styled.div`
   font-family: "JetBrains Mono", monospace;
-  font-size: 13px;
+  font-size: 11px;
   color: ${(props) => props.theme.accentColor};
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -154,7 +204,7 @@ const FactLabel = styled.div`
 `;
 
 const FactValue = styled.div`
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: ${(props) => props.theme.color};
 `;
@@ -220,6 +270,9 @@ function About() {
   return (
     <Wrap>
       <Section>
+        <MobileEyebrow>About me</MobileEyebrow>
+        <MobileHeading>A bit more about me</MobileHeading>
+
         <PhotoSide>
           <Blob />
           <PhotoFrame>
