@@ -27,24 +27,31 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  background: "#121212",
-  color: "#eee",
-  accentColor: "#3D84C6",
+  background: "#0D1B2A",
+  color: "#E8F1F8",
+  textSecondary: "#8FB8D4",
+  accentColor: "#4A7FA7",
+  accentDark: "#B3CFE5",
+  accentLight: "#1A3D63",
+  surface: "#111F35",
+  border: "#1E3050",
   chronoTheme: {
-    cardBgColor: "#1B1B1B",
-    cardForeColor: "#eee",
-    titleColor: "black",
+    cardBgColor: "#111F35",
+    cardForeColor: "#E8F1F8",
+    titleColor: "#E8F1F8",
   },
-  timelineLineColor: "#444",
-  cardBackground: "#060606",
-  cardFooterBackground: "#181818",
-  cardBorderColor: "#ffffff20",
+  timelineLineColor: "#1E3050",
+  cardBackground: "#111F35",
+  cardFooterBackground: "#0D1B2A",
+  cardBorderColor: "#1E3050",
   navbarTheme: {
-    linkColor: "#dedede",
-    linkHoverColor: "#fefefe",
-    linkActiveColor: "#fefefe",
+    linkColor: "#8FB8D4",
+    linkHoverColor: "#E8F1F8",
+    linkActiveColor: "#E8F1F8",
   },
   bsPrimaryVariant: "dark",
   bsSecondaryVariant: "light",
-  socialIconBgColor: "#fefefe",
+  socialIconBgColor: "#B3CFE5",
 };
+
+export const theme = lightTheme;

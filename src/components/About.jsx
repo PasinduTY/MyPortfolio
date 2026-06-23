@@ -5,7 +5,10 @@ import endpoints from "../constants/endpoints";
 import FallbackSpinner from "./FallbackSpinner";
 
 const Wrap = styled.div`
-  background: linear-gradient(160deg, #f6fafd 0%, #dceaf5 100%);
+  background: ${(props) =>
+    props.theme.background === "#0D1B2A"
+      ? "linear-gradient(160deg, #0D1B2A 0%, #0F2035 100%)"
+      : "linear-gradient(160deg, #F6FAFD 0%, #DCEAF5 100%)"};
 `;
 
 const Section = styled.section`

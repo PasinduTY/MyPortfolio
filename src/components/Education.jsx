@@ -4,11 +4,10 @@ import endpoints from "../constants/endpoints";
 import FallbackSpinner from "./FallbackSpinner";
 
 const Wrap = styled.div`
-  background: radial-gradient(
-    ellipse 75% 65% at 50% 50%,
-    #ccdff0 0%,
-    #f6fafd 100%
-  );
+  background: ${(props) =>
+    props.theme.background === "#0D1B2A"
+      ? "radial-gradient(ellipse 75% 65% at 50% 50%, #0F2035 0%, #0D1B2A 100%)"
+      : "radial-gradient(ellipse 75% 65% at 50% 50%, #CCDFF0 0%, #F6FAFD 100%)"};
 `;
 
 const Section = styled.section`
@@ -120,7 +119,7 @@ const TlDot = styled.div`
   height: 14px;
   border-radius: 50%;
   background: ${(props) => props.theme.accentDark};
-  border: 3px solid #f6fafd;
+  border: 3px solid ${(props) => props.theme.background};
   box-shadow:
     0 0 0 2px ${(props) => props.theme.accentDark},
     0 0 12px rgba(26, 61, 99, 0.25);

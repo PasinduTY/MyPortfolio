@@ -164,7 +164,7 @@ const NavBar = () => {
       <Bar>
         <NavRow>
           <Logo href="#home" onClick={() => setExpanded(false)}>
-            pasindu.
+            pasinduTY
           </Logo>
 
           <RightSide>
