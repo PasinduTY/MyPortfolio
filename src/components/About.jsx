@@ -84,7 +84,7 @@ const PhotoSide = styled.div`
   @media (max-width: 760px) {
     grid-area: photo;
     width: 200px;
-    margin: 0 auto 28px;
+    margin: 16px auto 28px;
   }
 `;
 
