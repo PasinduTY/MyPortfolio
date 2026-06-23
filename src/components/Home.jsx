@@ -407,9 +407,9 @@ function Home() {
               </CodeLine>
               <CodeLine delay="0.55s">
                 {"  stack: ["}
-                <Str>&quot;React&quot;</Str>
-                {", "}
                 <Str>&quot;ASP.NET&quot;</Str>
+                {", "}
+                <Str>&quot;React&quot;</Str>
                 {", "}
                 <Str>&quot;Azure&quot;</Str>
                 {"],"}
