@@ -95,15 +95,16 @@ const Blob = styled.div`
   opacity: 0.55;
   width: 110%;
   height: 110%;
-  top: -8%;
-  left: -6%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 0;
 `;
 
 const PhotoFrame = styled.div`
   position: relative;
   z-index: 1;
-  width: 75%;
+  width: 85%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;
