@@ -7,6 +7,7 @@ import Education from "./components/Education";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
+import Contact from "./components/Contact";
 
 function MainApp() {
   return (
@@ -33,6 +34,9 @@ function MainApp() {
         </section>
         <section id="certifications">
           <Certifications />
+        </section>
+        <section id="contact">
+          <Contact />
         </section>
       </main>
     </div>

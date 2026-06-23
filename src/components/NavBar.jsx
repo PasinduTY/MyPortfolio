@@ -50,8 +50,8 @@ const StyledLink = styled.a`
   font-family: "Manrope", sans-serif;
   font-size: 14px;
   font-weight: 600;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
   color: ${(props) =>
     props.$active ? props.theme.accentColor : props.theme.textSecondary};
   text-decoration: none;
@@ -164,32 +164,21 @@ const NavBar = () => {
       <Bar>
         <NavRow>
           <Logo href="#home" onClick={() => setExpanded(false)}>
-            pasinduTY
+            pasindu.
           </Logo>
 
-          <Links>
-            {internalLinks.map((section) => (
-              <StyledLink
-                key={section.title}
-                href={section.href}
-                $active={section.href === `#${activeId}`}
-              >
-                {section.title}
-              </StyledLink>
-            ))}
-          </Links>
-
           <RightSide>
-            {externalLinks.map((section) => (
-              <CtaLink
-                key={section.title}
-                href={section.href}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {section.title}
-              </CtaLink>
-            ))}
+            <Links>
+              {internalLinks.map((section) => (
+                <StyledLink
+                  key={section.title}
+                  href={section.href}
+                  $active={section.href === `#${activeId}`}
+                >
+                  {section.title}
+                </StyledLink>
+              ))}
+            </Links>
             <ThemeToggler />
             <Burger
               onClick={() => setExpanded(!expanded)}
@@ -205,17 +194,6 @@ const NavBar = () => {
             <a
               key={section.title}
               href={section.href}
-              onClick={() => setExpanded(false)}
-            >
-              {section.title}
-            </a>
-          ))}
-          {externalLinks.map((section) => (
-            <a
-              key={section.title}
-              href={section.href}
-              target="_blank"
-              rel="noopener noreferrer"
               onClick={() => setExpanded(false)}
             >
               {section.title}

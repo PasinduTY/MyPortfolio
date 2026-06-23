@@ -354,7 +354,7 @@ function Home() {
             <Socials>
               <SocialButton>
                 <SocialIcon
-                  url="https://www.linkedin.com/in/pasindu-siriwardena-609885231/"
+                  url="https://www.linkedin.com/in/pasindusiriwardena"
                   network="linkedin"
                   bgColor="transparent"
                   fgColor={theme.textSecondary}
